@@ -1,6 +1,6 @@
 # Proyecto: backend-base
 
-Proyecto desarrollado en TypeScript - NodeJs. Servicio REST que genera los siguientes endpoints:
+Proyecto desarrollado en TypeScript - NodeJs. Servicio REST con una aplicacion que opera funciones basicas de una calculadora (suma y resta). Genera los siguientes endpoints:
 
 ## Endpoints:
 
