@@ -18,7 +18,14 @@ app.get("/operar", (req, res) => {
   const oper = req.query.oper as string;
 
   const resultado = operar(oper, a, b);
-  res.send(`el resultado de la operacion ${oper} de ${a} y ${b} es ${resultado}`);
+  
+  if(oper == 'potencia' ) {
+    return res.send(`el resultado de la operacion ${oper} de base ${a} y exponente ${b} es ${resultado}`);
+  } else if (oper == 'factorial' ) {
+    return res.send(`el resultado de la operacion ${oper} de ${a} es ${resultado}`);
+  }else {
+    res.send(`el resultado de la operacion ${oper} de ${a} y ${b} es ${resultado}`);
+  }
 });
 
 export default app;
