@@ -1,6 +1,6 @@
 import express from "express";
 import { configuration } from "./config.js";
-import { operar, suma } from "./calculadora.js";
+import { operar } from "./calculadora.js";
 
 const app = express();
 
